@@ -2,6 +2,7 @@
 
 export const contentAreaData = [
     {
+        index: 0,
         id: 11,
         topicHeading: "installation",
         initialPara: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. architecto cupiditate odit quibusdam soluta veritatis assumenda sit eum laboriosam voluptates",
@@ -67,6 +68,7 @@ export const contentAreaData = [
         ]
     },
     {
+        index: 1,
         id: 12,
         topicHeading: "quick start",
         initialPara: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. architecto cupiditate odit quibusdam soluta veritatis assumenda sit eum laboriosam voluptates",
@@ -104,6 +106,7 @@ export const contentAreaData = [
         ]
     },
     {
+        index: 2,
         id: 13,
         topicHeading: "overview",
         initialPara: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. architecto cupiditate odit quibusdam soluta veritatis assumenda sit eum laboriosam voluptates",
@@ -140,6 +143,7 @@ export const contentAreaData = [
         ]
     },
     {
+        index: 3,
         id: 21,
         topicHeading: "textfield",
         initialPara: "consectetur adipisicing elit. architecto cupiditate odit quibusdam soluta veritatis assumenda si",

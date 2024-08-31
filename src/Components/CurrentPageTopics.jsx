@@ -3,7 +3,6 @@ import CurrentPageSubTopics from './CurrentPageSubTopics';
 import { Link } from 'react-scroll';
 
 const CurrentPageTopics = ({ pageRoute, subContentToShow }) => {
-    console.log(pageRoute);
     useEffect(()=>{},[pageRoute])
     return (
         <div className='w-[270px] h-[90vh] sticky top-16 z-10 flex items-center font-serif flex-col border-l-2 border-slate-200 p-5 overflow-x-hidden overflow-y-auto'>

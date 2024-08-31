@@ -3,7 +3,6 @@ import { v4 as uuidv4 } from 'uuid';
 import CodeSnippet from './CodeSnippet';
 
 const SubDocSubContent = ({ subDocument }) => {
-    console.log(subDocument);
     return (
         <>
             {
