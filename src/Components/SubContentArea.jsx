@@ -21,9 +21,9 @@ const SubContentArea = ({ subDocument }) => {
                                 : ''
                         }
                         {
-                            subDoc.bulletPoints !== undefined ? <div className='flex flex-col gap-2'>{subDoc.bulletPoints.map((point) => (
-                                <div key={uuidv4()} className='flex gap-2 items-center'><span className='h-1.5 w-1.5 rounded-md bg-[#53565A]'></span><span className="text-[#53565A] text-md">{point}</span></div>
-                            ))}</div> : ''
+                            subDoc.bulletPoints !== undefined ? <ul className="ml-6 text-[#53565A] text-md list-disc">{subDoc.bulletPoints.map((point) => (
+                                <li key={uuidv4()} className='pl-2'>{point}</li>
+                            ))}</ul> : ''
                         }
                         {
                             /* Run the code to show how the code written below runs */

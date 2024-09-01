@@ -24,6 +24,7 @@ export const contentAreaData = [
                         id: 1111,
                         topicHeading: "Usages of Form",
                         initialPara: "This is sunny",
+                        bulletPoints: ["rchitecto cupiditate odit quibusdam", "rchitecto cupiditate odit quibusdam", "rchitecto cupiditate odit quibusdam"]
                     }, {
                         id: 1112,
                         topicHeading: "MUI vs ShadCN",

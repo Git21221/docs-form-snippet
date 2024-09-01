@@ -6,7 +6,6 @@ import { FaAngleDoubleLeft, FaAngleDoubleRight } from 'react-icons/fa';
 import { useNavigate } from 'react-router-dom';
 const ContentArea = ({ prev, next, docToShow }) => {
     const navigate = useNavigate();
-    console.log(prev, next);
     return (
         <section className='w-full flex flex-col flex-1 gap-4 p-14'>
             <div id={docToShow.topicHeading.replace(/\s+/g, '').toLowerCase()} className="flex flex-col gap-2 mb-6">
@@ -18,9 +17,9 @@ const ContentArea = ({ prev, next, docToShow }) => {
                     : ''
             }
             {
-                docToShow.bulletPoints !== undefined ? <div className='flex flex-col gap-2'>{docToShow.bulletPoints.map((point)=>(
-                    <div key={uuidv4()} className='flex gap-2 items-center'><span className='h-1.5 w-1.5 rounded-md bg-[#53565A]'></span><span className="text-[#53565A] text-md">{point}</span></div>
-                ))}</div>  : ''
+                docToShow.bulletPoints !== undefined ? <ul className="ml-6 text-[#53565A] text-md list-disc">{docToShow.bulletPoints.map((point)=>(
+                    <li key={uuidv4()} className='pl-2'>{point}</li>
+                ))}</ul>  : ''
             }
             {
                 /* Run the code to show how the code written below runs */
