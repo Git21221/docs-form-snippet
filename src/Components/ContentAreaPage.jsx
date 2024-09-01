@@ -14,12 +14,12 @@ const ContentAreaPage = () => {
         (!docToShow.length) ? ( 
         <div className='w-full min-h-[90vh] flex flex-1'> 
         <ContentArea prev={undefined} next={contentAreaData.length===1 ? undefined : contentAreaData[1].topicHeading} docToShow={contentAreaData[0]}/>
-        <CurrentPageTopics pageRoute={contentAreaData[0].topicHeading} subContentToShow={contentAreaData[0].subContents}/>
+        <CurrentPageTopics subContentToShow={contentAreaData[0].subContents}/>
         </div>)
         : ( 
         <div className='w-full min-h-[90vh] flex flex-1'>
         <ContentArea prev={docToShow[0].index > 0  ? contentAreaData[docToShow[0].index-1].topicHeading : undefined} next={docToShow[0].index===contentAreaData.length-1 ? undefined : contentAreaData[docToShow[0].index+1].topicHeading} docToShow={docToShow[0]}/>
-        <CurrentPageTopics pageRoute={docToShow[0].topicHeading} subContentToShow={docToShow[0].subContents}/>
+        <CurrentPageTopics subContentToShow={docToShow[0].subContents}/>
         </div>)
     );
 }

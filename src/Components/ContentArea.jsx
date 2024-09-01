@@ -9,8 +9,8 @@ const ContentArea = ({ prev, next, docToShow }) => {
     console.log(prev, next);
     return (
         <section className='w-full flex flex-col flex-1 gap-4 p-14'>
-            <div className="flex flex-col gap-2 mb-6">
-                <h1 id={docToShow.topicHeading.replace(/\s+/g, '').toLowerCase()} className="text-6xl font-bold"><span>{docToShow.topicHeading[0].toUpperCase()}</span>{docToShow.topicHeading.slice(1)}</h1>
+            <div id={docToShow.topicHeading.replace(/\s+/g, '').toLowerCase()} className="flex flex-col gap-2 mb-6">
+                <h1 className="text-6xl font-bold"><span>{docToShow.topicHeading[0].toUpperCase()}</span>{docToShow.topicHeading.slice(1)}</h1>
                 <p className="text-lg text-slate-600">{docToShow.initialPara}</p>
             </div>
             {
