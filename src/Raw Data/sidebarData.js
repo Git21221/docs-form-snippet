@@ -5,15 +5,19 @@ export const sidebarData = [
         subtopics: [
             {
                 id: 11,
-                subtopic: "Installation"
+                subtopic: "Overview"
             },
             {
                 id: 12,
-                subtopic: "Quick Start"
+                subtopic: "Installation"
             },
             {
                 id: 13,
-                subtopic: "Overview"
+                subtopic: "Usage"
+            },
+            {
+                id: 14,
+                subtopic: "Support"
             }
         ]
     },
@@ -23,15 +27,15 @@ export const sidebarData = [
         subtopics: [
             {
                 id: 21,
-                subtopic: "TextField"
+                subtopic: "Form Wrapper"
             },
             {
                 id: 22,
-                subtopic: "Button"
+                subtopic: "Input"
             },
             {
                 id: 23,
-                subtopic: "Input"
+                subtopic: "Button"
             }
         ]
     }

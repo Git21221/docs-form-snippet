@@ -6,7 +6,9 @@ import { contentAreaData } from '../Raw Data/contentAreaData';
 
 const ContentAreaPage = () => {
     const {docTopic} = useParams();
-    const docToShow = contentAreaData.filter((data)=> data.topicHeading===docTopic);
+    const docToShow = contentAreaData?.filter((data)=> data.topicHeading===docTopic);
+    console.log(docToShow);
+    
     return(
         (!docToShow.length) ? ( 
         <div className='w-full min-h-[90vh] flex flex-1'> 
