@@ -1,10 +1,8 @@
-import React, { Fragment, useEffect } from 'react';
+import React, { Fragment } from 'react';
 import CurrentPageSubTopics from './CurrentPageSubTopics';
-import { Link } from 'react-scroll';
+import { scrollToPos } from '../utils';
 
-const CurrentPageTopics = ({ pageRoute, subContentToShow }) => {
-    console.log(pageRoute);
-    useEffect(()=>{},[pageRoute])
+const CurrentPageTopics = ({ subContentToShow }) => {
     return (
         <div className='w-[270px] h-[90vh] sticky top-16 z-10 flex items-center font-serif flex-col border-l-2 border-slate-200 p-5 overflow-x-hidden overflow-y-auto'>
             <h3 className='tracking-widest font-semibold text-xl font-sans underline mb-5'>CONTENT</h3>
@@ -12,11 +10,9 @@ const CurrentPageTopics = ({ pageRoute, subContentToShow }) => {
                 {
                     subContentToShow?.map((subTopic) => (
                         <Fragment key={subTopic.id}>
-                            <Link to={`${subTopic.topicHeading.replace(/\s+/g, '').toLowerCase()}`} smooth={true} duration={500}>
-                                <p title={`${subTopic.topicHeading}`} className='text-zinc-700 text-lg font-sans text-left tracking-wider font-semibold truncate cursor-pointer'>{subTopic.topicHeading}</p>
-                            </Link>
+                                <p title={`${subTopic.topicHeading}`} onClick={()=>scrollToPos(`${subTopic.topicHeading.replace(/\s+/g, '').toLowerCase()}`)} className='text-zinc-700 text-lg font-sans text-left tracking-wider font-semibold truncate cursor-pointer'>{subTopic.topicHeading}</p>
                             {
-                                subTopic.subContents !== undefined ? <CurrentPageSubTopics pageRoute={subTopic.topi} content={subTopic.subContents} /> : ''
+                                subTopic.subContents !== undefined ? <CurrentPageSubTopics content={subTopic.subContents} /> : ''
                             }
                         </Fragment>))
                 }

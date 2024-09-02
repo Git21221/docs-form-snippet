@@ -14,7 +14,6 @@ const CodeSnippet = ({code}) => {
         }
     }
     useEffect(()=>{
-        console.log('effect fired');
         setTimeout(()=>{
             setIsCopied(false);
         },2500)
