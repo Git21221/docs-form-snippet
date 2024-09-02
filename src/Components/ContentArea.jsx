@@ -4,6 +4,7 @@ import CodeSnippet from './CodeSnippet';
 import ReturnTable from './ReturnTable';
 import { FaAngleDoubleLeft, FaAngleDoubleRight } from 'react-icons/fa';
 import { useNavigate } from 'react-router-dom';
+import { markdownStringChecker } from '../utils.jsx';
 const ContentArea = ({ prev, next, docToShow }) => {
     // console.log(docToShow);
     const navigate = useNavigate();
@@ -11,15 +12,15 @@ const ContentArea = ({ prev, next, docToShow }) => {
         <section className='w-full flex flex-col flex-1 gap-4 p-14'>
             <div id={docToShow.topicHeading.replace(/\s+/g, '').toLowerCase()} className="flex flex-col gap-2 mb-6">
                 <h1 className="text-6xl font-bold"><span>{docToShow.topicHeading[0].toUpperCase()}</span>{docToShow.topicHeading.slice(1)}</h1>
-                <p className="text-lg text-slate-600">{docToShow.initialPara}</p>
+                <p className="text-lg text-slate-600">{markdownStringChecker(docToShow.initialPara)}</p>
             </div>
             {
-                docToShow.extraPara !== undefined ? <p className="text-md text-[#53565A]">{docToShow.extraPara}</p>
+                docToShow.extraPara !== undefined ? <p className="text-md text-[#53565A]">{markdownStringChecker(docToShow.extraPara)}</p>
                     : ''
             }
             {
                 docToShow.bulletPoints !== undefined ? <ul className="ml-6 text-[#53565A] text-md list-disc">{docToShow.bulletPoints.map((point)=>(
-                    <li key={uuidv4()} className='pl-2'>{point}</li>
+                    <li key={uuidv4()} className='pl-2'>{markdownStringChecker(point)}</li>
                 ))}</ul>  : ''
             }
             {

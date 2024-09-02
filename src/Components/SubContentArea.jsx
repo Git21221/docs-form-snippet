@@ -2,6 +2,7 @@ import React from 'react';
 import { v4 as uuidv4 } from 'uuid';
 import SubDocSubContent from './SubDocSubContent';
 import CodeSnippet from './CodeSnippet';
+import { markdownStringChecker } from '../utils.jsx';
 
 const SubContentArea = ({ subDocument }) => {
     return (
@@ -13,16 +14,16 @@ const SubContentArea = ({ subDocument }) => {
                             <h1 id={subDoc.topicHeading.replace(/\s+/g, '').toLowerCase()} className="text-4xl font-bold"><span>{subDoc.topicHeading[0].toUpperCase()}</span>{subDoc.topicHeading.slice(1)}</h1>
                             {
                                 subDoc.initialPara!==undefined ? 
-                                <p className="text-md text-slate-600">{subDoc.initialPara}</p> : ''
+                                <p className="text-md text-slate-600">{markdownStringChecker(subDoc.initialPara)}</p> : ''
                             }
                         </div>
                         {
-                            subDoc.extraPara !== undefined ? <p className="text-md text-[#53565A]">{subDoc.extraPara}</p>
+                            subDoc.extraPara !== undefined ? <p className="text-md text-[#53565A]">{markdownStringChecker(subDoc.extraPara)}</p>
                                 : ''
                         }
                         {
                             subDoc.bulletPoints !== undefined ? <ul className="ml-6 text-[#53565A] text-md list-disc">{subDoc.bulletPoints.map((point) => (
-                                <li key={uuidv4()} className='pl-2'>{point}</li>
+                                <li key={uuidv4()} className='pl-2'>{markdownStringChecker(point)}</li>
                             ))}</ul> : ''
                         }
                         {

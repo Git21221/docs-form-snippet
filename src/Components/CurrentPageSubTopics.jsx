@@ -1,5 +1,5 @@
 import React from 'react';
-import { scrollToPos } from '../utils';
+import { scrollToPos } from '../utils.jsx';
 const CurrentPageSubTopics = ({ content }) => {
     return (
         <div className='flex flex-col overflow-hidden px-2.5 truncate'>

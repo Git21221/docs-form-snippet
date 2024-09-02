@@ -7,7 +7,8 @@ export const contentAreaData = [
     id: 11,
     topicHeading: "overview",
     initialPara:
-      "Form Snippet is a React component library that provides ready-to-use form components. It is built using Material-UI and Tailwind CSS and uses react-hook-form for validation.",
+      "(Form Snippet) is a React component library that provides ready-to-use form components. It is built using {Material-UI} and [Tailwind CSS] and uses {react-hook-form} for validation.",
+    bulletPoints: ["(Form Snippet) is a React component library that {provides}","[Tailwind CSS] and uses {react-hook-form} for"],
     // extraPara:
     //   "consectetur adipisicing elit. architecto cupiditate odit quibusdam soluta veritatis assumenda sit",
     subContents: [
@@ -30,8 +31,8 @@ export const contentAreaData = [
         // extraPara:
         //   "consectetur adipisicing elit. architecto cupiditate odit quibusdam soluta veritatis assumenda sit",
         bulletPoints: [
-          "All in one: Form Snippet provides a variety of form components with proper validation, so less code for complex forms.",
-          "Maintain Code quality and maintainability: Form Snippet provides a consistent look and feel for all form components.",
+          "(All in one:) Form Snippet provides a variety of form components with proper validation, so less code for complex forms.",
+          "(Maintain Code quality and maintainability:) Form Snippet provides a consistent look and feel for all form components.",
         ],
         // subContents: [
         //   {

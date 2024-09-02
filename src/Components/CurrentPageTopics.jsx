@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 import CurrentPageSubTopics from './CurrentPageSubTopics';
-import { scrollToPos } from '../utils';
+import { scrollToPos } from '../utils.jsx';
 
 const CurrentPageTopics = ({ subContentToShow }) => {
     console.log(subContentToShow);
