@@ -8,7 +8,7 @@ const CurrentPageTopics = ({ subContentToShow }) => {
             <h3 className='tracking-widest font-semibold text-xl font-sans underline mb-5'>CONTENT</h3>
             <div className='min-w-[180px] max-w-[250px]'>
                 {
-                    subContentToShow?.map((subTopic) => (
+                    subContentToShow.map((subTopic) => (
                         <Fragment key={subTopic.id}>
                                 <p title={`${subTopic.topicHeading}`} onClick={()=>scrollToPos(`${subTopic.topicHeading.replace(/\s+/g, '').toLowerCase()}`)} className='text-zinc-700 text-lg font-sans text-left tracking-wider font-semibold truncate cursor-pointer'>{subTopic.topicHeading}</p>
                             {
