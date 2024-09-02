@@ -9,8 +9,6 @@ export const contentAreaData = [
     initialPara:
       "(Form Snippet) is a React component library that provides ready-to-use form components. It is built using {Material-UI} and [Tailwind CSS] and uses {react-hook-form} for validation.",
     bulletPoints: ["(Form Snippet) is a React component library that {provides}","[Tailwind CSS] and uses {react-hook-form} for"],
-    // extraPara:
-    //   "consectetur adipisicing elit. architecto cupiditate odit quibusdam soluta veritatis assumenda sit",
     subContents: [
       {
         id: 111,
@@ -18,42 +16,15 @@ export const contentAreaData = [
         initialPara: "Form Snippet is a React component library that uses Material-UI and react-hook-form.",
         extraPara:
           "It includes a variety of form components like TextField, Select, Checkbox, Radio, and more. The components are easy to code and easy to add validation.",
-        // bulletPoints: [
-        //   "rchitecto cupiditate odit quibusdam",
-        //   "rchitecto cupiditate odit quibusdam",
-        //   "rchitecto cupiditate odit quibusdam",
-        // ],
       },
       {
         id: 112,
         topicHeading: "Advantages of form-snippet",
-        // initialPara: "Its sunny",
-        // extraPara:
-        //   "consectetur adipisicing elit. architecto cupiditate odit quibusdam soluta veritatis assumenda sit",
         bulletPoints: [
           "(All in one:) Form Snippet provides a variety of form components with proper validation, so less code for complex forms.",
           "(Maintain Code quality and maintainability:) Form Snippet provides a consistent look and feel for all form components.",
         ],
-        // subContents: [
-        //   {
-        //     id: 1121,
-        //     topicHeading: "Tapan",
-        //     initialPara: "This is sunny",
-        //   },
-        // ],
       },
-      // {
-      //   id: 113,
-      //   topicHeading: "Gallo",
-      //   initialPara: "This is sunny",
-      //   extraPara:
-      //     "consectetur adipisicing elit. architecto cupiditate odit quibusdam soluta veritatis assumenda sit",
-      //   bulletPoints: [
-      //     "rchitecto cupiditate odit quibusdam",
-      //     "rchitecto cupiditate odit quibusdam",
-      //     "rchitecto cupiditate odit quibusdam",
-      //   ],
-      // },
     ],
   },
   // installation
@@ -63,17 +34,6 @@ export const contentAreaData = [
     topicHeading: "installation",
     initialPara:
       "form-snippet is available as an npm package. You can install it using npm or yarn.",
-    // extraPara:
-    //   "Lorem ipsum dolor sit amet, consectetur adipisicing elit. architecto cupiditate odit quibusdam soluta veritatis assumenda sit eum laboriosam voluptatesconsectetur adipisicing elit. architecto cupiditate odit quibusdam soluta veritatis assumenda sit",
-    // bulletPoints: [
-    //   "Architecto cupiditate odit quibusdam",
-    //   "rchitecto cupiditate odit quibusdam",
-    //   "rchitecto cupiditate odit quibusdam",
-    // ],
-    // codeSnippet: {
-    //   needToRun: false,
-    //   code: `npm i form-snippet`,
-    // },
     subContents: [
       {
         id: 121,
@@ -83,25 +43,6 @@ export const contentAreaData = [
           needToRun: false,
           code: `npm i form-snippet`,
         },
-        // extraPara:
-        //   "consectetur adipisicing elit. architecto cupiditate odit quibusdam soluta veritatis assumenda sit",
-        // bulletPoints: [
-        //   "rchitecto cupiditate odit quibusdam",
-        //   "rchitecto cupiditate odit quibusdam",
-        //   "rchitecto cupiditate odit quibusdam",
-        // ],
-        // subContents: [
-        //   {
-        //     id: 1211,
-        //     topicHeading: "Usages of Form",
-        //     initialPara: "This is sunny",
-        //   },
-        //   {
-        //     id: 1212,
-        //     topicHeading: "MUI vs ShadCN",
-        //     initialPara: "This is sunny",
-        //   },
-        // ],
       },
       {
         id: 122,
@@ -111,25 +52,6 @@ export const contentAreaData = [
           needToRun: false,
           code: `npm install @git21221/form-snippet@1.1.3`,
         },
-        // extraPara:
-        //   "consectetur adipisicing elit. architecto cupiditate odit quibusdam soluta veritatis assumenda sit",
-        // bulletPoints: [
-        //   "rchitecto cupiditate odit quibusdam",
-        //   "rchitecto cupiditate odit quibusdam",
-        //   "rchitecto cupiditate odit quibusdam",
-        // ],
-        // subContents: [
-        //   {
-        //     id: 1211,
-        //     topicHeading: "Usages of Form",
-        //     initialPara: "This is sunny",
-        //   },
-        //   {
-        //     id: 1212,
-        //     topicHeading: "MUI vs ShadCN",
-        //     initialPara: "This is sunny",
-        //   },
-        // ],
       },
       {
         id: 123,
@@ -138,46 +60,7 @@ export const contentAreaData = [
           "All in one: Form Snippet provides a variety of form components with proper validation, so less code for complex forms.",
           "Maintain Code quality and maintainability: Form Snippet provides a consistent look and feel for all form components.",
         ],
-        // initialPara: "Its sunny",
-        // extraPara:
-        //   "consectetur adipisicing elit. architecto cupiditate odit quibusdam soluta veritatis assumenda sit",
-        // subContents: [
-        //   {
-        //     id: 1221,
-        //     topicHeading: "MUI vs ShadCN",
-        //     initialPara: "This is sunny",
-        //   },
-        //   {
-        //     id: 1222,
-        //     topicHeading: "MUI vs Tailwind",
-        //     initialPara: "This is sunny",
-        //   },
-        //   {
-        //     id: 1223,
-        //     topicHeading: "ShadCN ka nanga nach",
-        //     initialPara: "This is sunny",
-        //   },
-        // ],
       },
-      // {
-      //   id: 123,
-      //   topicHeading: "Hello I'm installation",
-      //   initialPara: "This is sunny",
-      //   extraPara:
-      //     "consectetur adipisicing elit. architecto cupiditate odit quibusdam soluta veritatis assumenda sit",
-      // },
-      // {
-      //   id: 124,
-      //   topicHeading: "I'm here",
-      //   initialPara: "This is sunny",
-      //   extraPara:
-      //     "consectetur adipisicing elit. architecto cupiditate odit quibusdam soluta veritatis assumenda sit",
-      //   bulletPoints: [
-      //     "rchitecto cupiditate odit quibusdam",
-      //     "rchitecto cupiditate odit quibusdam",
-      //     "rchitecto cupiditate odit quibusdam",
-      //   ],
-      // },
     ],
   },
   // usage
@@ -187,13 +70,6 @@ export const contentAreaData = [
     topicHeading: "usage",
     initialPara:
       "Learn how to use form-snippet components in your React application.",
-    // extraPara:
-    //   "consectetur adipisicing elit. architecto cupiditate odit quibusdam soluta veritatis assumenda sit",
-    // bulletPoints: [
-    //   "rchitecto cupiditate odit quibusdam",
-    //   "rchitecto cupiditate odit quibusdam",
-    //   "rchitecto cupiditate odit quibusdam",
-    // ],
     subContents: [
       // basic usage
       {
@@ -363,6 +239,19 @@ export const contentAreaData = [
     topicHeading: "form wrapper",
     initialPara:
       "It's a wrapper component that wraps all the form components and get all the form data.",
+        returnTable: [
+        {
+            name: "placeHolder",
+            type: "()=>void",
+            default: "Enter text here",
+            description: "consectetur adipisicing elit. [architecto cupiditate] odit quibusdam soluta veritatis assumenda"
+        },
+        {
+            name: "label",
+            type: "string",
+            description: "consectetur adipisicing elit. architecto cupiditate odit quibusdam soluta veritatis assumenda consectetur adipisicing elit. architecto cupiditate odit quibusdam soluta veritatis assumenda consectetur adipisicing elit. architecto cupiditate odit quibusdam soluta veritatis assumenda"
+        }
+    ]
   }
 ];
 

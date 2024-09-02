@@ -3,7 +3,6 @@ import CurrentPageSubTopics from './CurrentPageSubTopics';
 import { scrollToPos } from '../utils.jsx';
 
 const CurrentPageTopics = ({ subContentToShow }) => {
-    console.log(subContentToShow);
     return (
         <div className='w-[270px] h-[90vh] sticky top-16 z-10 flex items-center font-serif flex-col border-l-2 border-slate-200 p-5 overflow-x-hidden overflow-y-auto'>
             <h3 className='tracking-widest font-semibold text-xl font-sans underline mb-5'>CONTENT</h3>
@@ -23,10 +22,3 @@ const CurrentPageTopics = ({ subContentToShow }) => {
 }
 
 export default CurrentPageTopics;
-
-
-{/* {
-                    Array.isArray(subTopic.subContent) ?
-                    subTopic.subContent.map((content)=>)
-                    : ''
-                } */}
