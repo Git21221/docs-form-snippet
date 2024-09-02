@@ -5,6 +5,7 @@ import ReturnTable from './ReturnTable';
 import { FaAngleDoubleLeft, FaAngleDoubleRight } from 'react-icons/fa';
 import { useNavigate } from 'react-router-dom';
 const ContentArea = ({ prev, next, docToShow }) => {
+    // console.log(docToShow);
     const navigate = useNavigate();
     return (
         <section className='w-full flex flex-col flex-1 gap-4 p-14'>

@@ -7,6 +7,7 @@ import { contentAreaData } from '../Raw Data/contentAreaData';
 const ContentAreaPage = () => {
     const {docTopic} = useParams();
     const docToShow = contentAreaData.filter((data)=> data.topicHeading===docTopic);
+    console.log(docToShow);
     // const prev = docToShow.length===0 || docToShow.index === 0  ? undefined : contentAreaData[docToShow.index-1].topicHeading;
     // const next = !docToShow.length ? !contentAreaData.length ? undefined : contentAreaData[1].topicHeading : docToShow.index === contentAreaData.length-1 ? undefined : contentAreaData[docToShow.index+1].topicHeading;
     // console.log(docToShow);
@@ -19,7 +20,9 @@ const ContentAreaPage = () => {
         : ( 
         <div className='w-full min-h-[90vh] flex flex-1'>
         <ContentArea prev={docToShow[0].index > 0  ? contentAreaData[docToShow[0].index-1].topicHeading : undefined} next={docToShow[0].index===contentAreaData.length-1 ? undefined : contentAreaData[docToShow[0].index+1].topicHeading} docToShow={docToShow[0]}/>
-        <CurrentPageTopics subContentToShow={docToShow[0].subContents}/>
+            {
+                docToShow[0].subContents?<CurrentPageTopics subContentToShow={docToShow[0].subContents}/>:''
+            }
         </div>)
     );
 }

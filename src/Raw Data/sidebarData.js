@@ -23,7 +23,7 @@ export const sidebarData = [
         subtopics: [
             {
                 id: 21,
-                subtopic: "TextField"
+                subtopic: "TextField Wrapper"
             },
             {
                 id: 22,
