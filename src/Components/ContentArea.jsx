@@ -37,7 +37,7 @@ const ContentArea = ({ prev, next, docToShow }) => {
             {
                 docToShow.returnTable !== undefined ? <ReturnTable component={docToShow.topicHeading} table={docToShow.returnTable}/> : ''
             }
-            <div className='flex items-center justify-between text-xl font-semibold'>
+            <div className='flex items-center justify-between text-xl font-semibold select-none'>
                 {
                     prev===undefined ? <div></div> 
                     : <div onClick={()=> navigate(`/docs/${prev.toLowerCase()}`)} className='flex items-center gap-2 ml-3 transition-all cursor-pointer hover:ml-1 hover:gap-3'>
