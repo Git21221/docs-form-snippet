@@ -596,6 +596,34 @@ export const contentAreaData = [
       },
     ],
   },
+  {
+    index: 7,
+    id: 24,
+    topicHeading: "button dropdown",
+    initialPara:
+      "The ButtonDropdown component is a button that triggers an action when clicked and shows a dropdown.",
+    subContents: [
+      {
+        id: 241,
+        topicHeading: "Basic Usage",
+        initialPara:
+          "After installing form-snippet, you can use ButtonDropdown component.",
+        extraPara:
+          "Dont forget to wrap all the components inside the FormWrapper.",
+        codeSnippet: {
+          needToRun: false,
+          code: `<ButtonDropdown
+ options={["Option 1", "Option 2", "Option 3"]}
+ sx={{width: 20}}
+/>`,
+        },
+        bulletPoints: [
+          "The ButtonDropdown component is a button that triggers an action when clicked and shows a dropdown.",
+          "It is used to submit the form.",
+        ],
+      },
+    ],
+  },
 ];
 
 // Each Page Can all these values, you can add data using these values.
