@@ -19,7 +19,7 @@ const CodeSnippet = ({code}) => {
         },2500)
     },[isCopied])
     return (
-        <div className='max-w-2xl flex flex-col'>
+        <div className='flex flex-col'>
             <div className='h-fit p-2 flex items-end justify-between rounded-tl-md rounded-tr-md bg-[#E2E8F0]'>
                 <span></span>
                 {
