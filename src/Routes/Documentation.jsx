@@ -6,18 +6,14 @@ import SearchModal from '../Components/SearchModal';
 
 const Documentation = () => {
     const [isSearchOpen, setIsSearchOpen] = useState(false);
-    console.log(isSearchOpen);
     const openSearchModal = (e)=>{
         if(e.ctrlKey && e.key === 'q'){
             if(!isSearchOpen){
                 setIsSearchOpen(true);
-                console.log("ctrl q");
             }
         }else if(e.key === 'Escape'){
-            console.log("inside escape");
             if(isSearchOpen){
                 setIsSearchOpen(false);
-                console.log("esc");
             }
         }
     }
@@ -30,7 +26,7 @@ const Documentation = () => {
     return (
         <div className='min-h-[100vh] flex flex-col'>
             <Navigation isSearchOpen={isSearchOpen} setIsSearchOpen={setIsSearchOpen}/>
-            <div id="except-nav" className={`flex relative ${isSearchOpen ? {/* Blur CSS needs to be written here */} : ''}`}>
+            <div id="except-nav" className={`flex ${isSearchOpen ? {/* Blur CSS needs to be written here */} : ''}`}>
                 <Sidebar/>
                 <ContentAreaPage/>
                 {
