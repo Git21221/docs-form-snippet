@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { BsClipboard2, BsClipboard2CheckFill } from 'react-icons/bs';
 import SyntaxHighlighter from 'react-syntax-highlighter';
 import { atelierLakesideDark, atelierLakesideLight } from 'react-syntax-highlighter/dist/esm/styles/hljs';
+import {CodeBlock} from '@zendeskgarden/react-typography';
 
 const CodeSnippet = ({code}) => {
     const [isCopied, setIsCopied] = useState(false);
@@ -27,7 +28,8 @@ const CodeSnippet = ({code}) => {
                 }
             </div>
             <div className='max-h-[600px] overflow-y-auto bg-[#161B1D] rounded-bl-md rounded-br-md p-2'>
-            <SyntaxHighlighter language='javascript' style={atelierLakesideDark}>{code}</SyntaxHighlighter>
+            {/* <SyntaxHighlighter language='javascript' style={atelierLakesideDark}>{code}</SyntaxHighlighter> */}
+            <CodeBlock>{code}</CodeBlock>
             </div>
         </div>
     );

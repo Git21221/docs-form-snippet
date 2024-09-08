@@ -313,68 +313,26 @@ export const contentAreaData = [
           needToRun: false,
           code: `
             <Input 
-              name={"fName"} 
-              label={"First Name"} 
-              type={"text"} 
-              variant={"outlined"} 
-              size={"medium"} 
-              disabled={false} 
-              readOnly={false} 
-              minLength={2} 
-              maxLength={50} 
-              fullWidth={true} 
-              pattern={"[A-Za-z]+"} 
-              customValidation={(value) => value.includes('John')} 
-              required={true} 
-              defaultValue={""} 
-              multiline={false} 
-              startIcon={<Icon />} 
-              endIcon={<Icon />} 
-              autoComplete={"off"} 
-              sx={{ marginBottom: "16px" }} 
-            />
-            <Input 
-              name={"lName"} 
-              label={"Last Name"} 
-              type={"text"} 
-              variant={"outlined"} 
-              size={"medium"} 
-              disabled={false} 
-              readOnly={false} 
-              minLength={2} 
-              maxLength={50} 
-              fullWidth={true} 
-              pattern={"[A-Za-z]+"} 
-              customValidation={(value) => value.includes('Doe')} 
-              required={true} 
-              defaultValue={""} 
-              multiline={false} 
-              startIcon={<Icon />} 
-              endIcon={<Icon />} 
-              autoComplete={"off"} 
-              sx={{ marginBottom: "16px" }} 
-            />
-            <Input 
-              name={"email"} 
-              label={"Email"} 
-              type={"email"} 
-              variant={"outlined"} 
-              size={"medium"} 
-              disabled={false} 
-              readOnly={false} 
-              minLength={5} 
-              maxLength={100} 
-              fullWidth={true} 
-              pattern={"^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$"} 
-              customValidation={(value) => value.includes('@')} 
-              required={true} 
-              defaultValue={""} 
-              multiline={false} 
-              startIcon={<EmailIcon />} 
-              endIcon={<CheckIcon />} 
-              autoComplete={"on"} 
-              sx={{ marginBottom: "16px" }} 
-            />`,
+ name={"fName"} 
+ label={"First Name"} 
+ type={"text"} 
+ variant={"outlined"} 
+ size={"medium"} 
+ disabled={false} 
+ readOnly={false} 
+ minLength={2} 
+ maxLength={50} 
+ fullWidth={true} 
+ pattern={"[A-Za-z]+"} 
+ customValidation={(value) => value.includes('John')} 
+ required={true} 
+ defaultValue={""} 
+ multiline={false} 
+ startIcon={<Icon />} 
+ endIcon={<Icon />} 
+ autoComplete={"off"} 
+ sx={{ marginBottom: "16px" }} 
+/>`,
         },
         bulletPoints: [
           "sx: The sx prop lets you style components quickly.",
