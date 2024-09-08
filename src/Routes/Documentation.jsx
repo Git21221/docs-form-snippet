@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import Navigation from '../Components/Navigation';
 import Sidebar from '../Components/Sidebar';
 import ContentAreaPage from '../Components/ContentAreaPage';
@@ -6,6 +6,7 @@ import SearchModal from '../Components/SearchModal';
 
 const Documentation = () => {
     const [isSearchOpen, setIsSearchOpen] = useState(false);
+    const inputRef = useRef(null);
     const openSearchModal = (e)=>{
         if(e.ctrlKey && e.key === 'q'){
             if(!isSearchOpen){
@@ -30,7 +31,7 @@ const Documentation = () => {
                 <Sidebar/>
                 <ContentAreaPage/>
                 {
-                    isSearchOpen && <SearchModal setIsSearchOpen={setIsSearchOpen}/>
+                    isSearchOpen && <SearchModal ref={inputRef} setIsSearchOpen={setIsSearchOpen}/>
                 }
             </div>
         </div>
