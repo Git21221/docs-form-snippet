@@ -9,7 +9,7 @@ const ContentArea = ({ prev, next, docToShow }) => {
     // console.log(docToShow);
     const navigate = useNavigate();
     return (
-        <section className='w-full flex flex-col flex-1 gap-4 p-14'>
+        <section className='w-full flex flex-col flex-1 gap-4 lg:p-14 p-4'>
             <div id={docToShow.topicHeading.replace(/\s+/g, '').toLowerCase()} className="flex flex-col gap-2 mb-6">
                 <h1 className="text-6xl font-bold"><span>{docToShow.topicHeading[0].toUpperCase()}</span>{docToShow.topicHeading.slice(1)}</h1>
                 <p className="text-lg text-slate-600">{markdownStringChecker(docToShow.initialPara)}</p>

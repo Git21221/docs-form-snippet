@@ -1,8 +1,21 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { v4 as uuidv4 } from "uuid";
 import { markdownStringChecker } from "../utils";
 
 const ReturnTable = ({ component, table }) => {
+  const [widthin, setInnerWidth] = useState(window.innerWidth);
+  console.log(widthin);
+
+  useEffect(() => {
+    window.addEventListener("resize", () => {
+      setInnerWidth(window.innerWidth);
+    });
+
+    return () => {
+      window.removeEventListener("resize", () => {});
+    }
+  }, [widthin]);
+  
   return (
     <div className="flex flex-col gap-3">
       <h3 className="text-3xl font-semibold">Props</h3>
@@ -10,8 +23,8 @@ const ReturnTable = ({ component, table }) => {
         The <span>{component[0].toUpperCase()}</span>
         <span>{component.slice(1)}</span> component accepts the following props:
       </p>
-      <div className="w-[100%] flex flex-col bg-slate-100 rounded-lg p-3 text-md text-slate-600 font-medium">
-        <table>
+      <div className="w-full overflow-x-auto flex flex-col bg-slate-100 rounded-lg p-3 text-md text-slate-600 font-medium">
+        <table className={`${widthin <= 975 ? "min-w-[800px]":""}`}>
           <thead>
             <tr>
               <th className="text-left text-black font-bold">Name</th>
