@@ -2,7 +2,7 @@ import { useState } from "react";
 import SidebarSubItems from "./SidebarSubItems";
 import { FaAngleDown, FaAngleUp } from "react-icons/fa6";
 
-const SidebarItems = ({ data }) => {
+const SidebarItems = ({ data, closeSidebar }) => {
   const { topic, subtopics } = data;
   const [showSubtopics, setShowSubtopics] = useState(false);
   return (
@@ -19,7 +19,7 @@ const SidebarItems = ({ data }) => {
       <div className="flex flex-col pl-2">
         {showSubtopics
           ? subtopics.map((subtopic) => (
-              <SidebarSubItems key={subtopic.id} subtopic={subtopic.subtopic} />
+              <SidebarSubItems key={subtopic.id} subtopic={subtopic.subtopic} closeSidebar={closeSidebar} />
             ))
           : ""}
       </div>

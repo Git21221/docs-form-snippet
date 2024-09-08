@@ -1,11 +1,14 @@
 import { useNavigate } from "react-router-dom";
 
 
-const SidebarSubItems = ({subtopic}) => {
+const SidebarSubItems = ({subtopic, closeSidebar}) => {
     // console.log(subtopic);
     const navigate = useNavigate();
     return (
-        <div className="p-1.5 font-medium text-zinc-500 text-md cursor-pointer rounded-md hover:bg-slate-100 " onClick={()=> navigate(`/docs/${subtopic.toLowerCase()}`)}>
+        <div className="p-1.5 font-medium text-zinc-500 text-md cursor-pointer rounded-md hover:bg-slate-100 " onClick={()=> {
+            navigate(`/docs/${subtopic.toLowerCase()}`)
+            closeSidebar();
+            }}>
             <p className="truncate" title={subtopic}>
                 {subtopic}
             </p>
