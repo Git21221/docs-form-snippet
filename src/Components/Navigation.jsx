@@ -27,7 +27,7 @@ const Navigation = ({ isSearchOpen, setIsSearchOpen }) => {
       >
         <FaMagnifyingGlass className="text-slate-600" />
         <span className="text-slate-600 font-medium">Search</span>
-        <span className="font-bold bg-white p-1 text-[12px] rounded-full">
+        <span className="shadow-md shadow-slate-400 font-bold bg-slate-100 p-1 text-[12px] rounded-full">
           Ctrl + Q
         </span>
       </div>
