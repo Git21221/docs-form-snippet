@@ -1,6 +1,7 @@
 import React, { forwardRef, useEffect, useState } from "react";
 import { sidebarData } from "../Raw Data/sidebarData";
 import SearchedTopics from "./SearchedTopics";
+import { RxCross2 } from "react-icons/rx";
 
 const SearchModal = forwardRef(({ setIsSearchOpen }, ref) => {
   const [filteredTopics, setFilteredTopics] = useState([]);
@@ -55,7 +56,7 @@ const SearchModal = forwardRef(({ setIsSearchOpen }, ref) => {
             className="close-modal text-sm font-semibold px-2 py-1 cursor-pointer rounded-md bg-slate-100 shadow-sm shadow-slate-600 hover:bg-slate-200"
             onClick={() => setIsSearchOpen(false)}
           >
-            ESC
+            {window.innerWidth >= 768 ? "ESC" : <RxCross2 />}
           </span>
         </div>
         <div
