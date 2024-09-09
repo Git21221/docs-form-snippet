@@ -25,12 +25,11 @@ const Sidebar = () => {
   };
 
   const closeSidebar = () => {
-    setIsSidebarOpen(false); // Close sidebar without toggling
+    setIsSidebarOpen(false);
   };
 
   return (
     <>
-      {/* Sidebar */}
       <div
         className={`w-[270px] ${
           isScreenSmall
@@ -41,13 +40,15 @@ const Sidebar = () => {
         } select-none flex flex-col border-r-2 border-slate-200 px-1.5 overflow-x-hidden whitespace-nowrap overflow-y-auto justify-between`}
       >
         <span>
-          {isScreenSmall && <div
-            id="logo"
-            className="px-6 py-4 text-zinc-800 text-2xl font-semibold italic cursor-pointer select-none"
-            onClick={() => navigate("/")}
-          >
-            formSnippet
-          </div>}
+          {isScreenSmall && (
+            <div
+              id="logo"
+              className="px-6 py-4 text-zinc-800 text-2xl font-semibold italic cursor-pointer select-none"
+              onClick={() => navigate("/")}
+            >
+              formSnippet
+            </div>
+          )}
           <hr />
           {sidebarData.map((data) => (
             <SidebarItems
