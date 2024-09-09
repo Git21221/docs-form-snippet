@@ -59,10 +59,10 @@ export const contentAreaData = [
       },
       {
         id: 123,
-        topicHeading: "Advantages of MUI",
+        topicHeading: "Advantages of form-snippet",
         bulletPoints: [
-          "All in one: Form Snippet provides a variety of form components with proper validation, so less code for complex forms.",
-          "Maintain Code quality and maintainability: Form Snippet provides a consistent look and feel for all form components.",
+          "(All in one:) Form Snippet provides a variety of form components with proper validation, so less code for complex forms.",
+          "(Maintain Code quality and maintainability:) Form Snippet provides a consistent look and feel for all form components.",
         ],
       },
     ],
@@ -91,7 +91,7 @@ export const contentAreaData = [
 </FormWrapper>`,
         },
         bulletPoints: [
-          "**handleSubmit** function has a `data` parameter which contains all the form data.",
+          "[handleSubmit] function has a [data] parameter which contains all the form data.",
         ],
       },
       // {
